@@ -1,0 +1,26 @@
+{
+  "name": "react-express",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "babel-node server.js",
+    "client": "babel-node start-client.js",
+    "dev": "echo \"This command has been deprecated. Use 'npm start'\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^3.5.0"
+  },
+  "dependencies": {
+    "axios": "^0.16.2",
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "mongodb": "^2.2.29",
+    "mongoose": "^4.11.1"
+  }
+}
